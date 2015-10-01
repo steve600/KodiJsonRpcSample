@@ -8,7 +8,7 @@ And the result should look like this:
 
 ![Kodi-JsonRpc-Result](http://csharp-blog.de/wp-content/uploads/2015/09/Kodi_JsonRpc_GetMovies_Response.png)
 
-For the JSON serialization the great <a href="http://www.newtonsoft.com/json" target="_blank">Json.NET</a> framework is used. The example does not cover the following points:
+For the JSON serialization the <a href="http://www.newtonsoft.com/json" target="_blank">Json.NET</a> framework is used. The example does not cover the following points:
 
 * Async communication
 * Generic response
