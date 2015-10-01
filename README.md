@@ -19,7 +19,7 @@ For the JSON serialization the great <a href="http://www.newtonsoft.com/json" ta
 
 It only shows the simplest form of communication. To successfully run the sample you need a running Kodi instance is required. To access Kodi's JSON-RPC API by sending JSON-RPC requests embedded in HTTP POST requests use the following URL:
 
-http://<your-ip>:<your-port>/jsonrpc
+http://{your-ip}:{your-port}/jsonrpc
 
 Starting with Frodo nightly builds it is mandatory to set the HTTP header field Content-Type: application/json
 
