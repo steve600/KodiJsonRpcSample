@@ -8,12 +8,50 @@ And the result should look like this:
 
 ![Kodi-JsonRpc-Result](http://csharp-blog.de/wp-content/uploads/2015/09/Kodi_JsonRpc_GetMovies_Response.png)
 
-For the JSON serialization the <a href="http://www.newtonsoft.com/json" target="_blank">Json.NET</a> framework is used. 
+For the JSON serialization the <a href="http://www.newtonsoft.com/json" target="_blank">Json.NET</a> framework is used. With the help of this framework it's very easy to create a JSON-RPC reqeust. Simply create a class, use the JsonProperty-Attribute and you're done! Here's the class for a JSON-RPC request:
 
 ```c#
-public interface IModule
+/// <summary>
+/// Represents a Json Rpc Request
+/// </summary>
+public class JsonRpcRequest
 {
-    void Initialize();
+    public JsonRpcRequest()
+    {
+    }
+
+    /// <summary>
+    /// JSON-RPC Version
+    /// </summary>
+    [JsonProperty("jsonrpc", Required = Required.Always)]
+    public string JsonRPC { get { return "2.0"; } }
+
+    /// <summary>
+    /// The id of the call
+    /// </summary>
+    [JsonProperty("id", Required = Required.Always)]
+    public int Id { get; set; }
+
+    /// <summary>
+    /// The rpc method.
+    /// </summary>
+    [JsonProperty("method", Required = Required.Always)]
+    public string Method { get; set; }
+
+    /// <summary>
+    /// Any parameters, optional.
+    /// </summary>
+    [JsonProperty("params")]
+    public object Params { get; set; }
+
+    /// <summary>
+    /// ToString-Method
+    /// </summary>
+    /// <returns></returns>
+    public override string ToString()
+    {
+        return JsonConvert.SerializeObject(this, Formatting.Indented);
+    }
 }
 ```
 
