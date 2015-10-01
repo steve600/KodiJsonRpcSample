@@ -19,7 +19,7 @@ The example does not cover the following points:
 * JSON specific details
 * ...
 
-It only shows the simplest form of communication. To successfully run the sample you need a running Kodi instance is required. To access Kodi's JSON-RPC API by sending JSON-RPC requests embedded in HTTP POST requests use the following URL:
+It only shows the simplest form of communication. To successfully run the sample a running Kodi instance is required. To access Kodi's JSON-RPC API by sending JSON-RPC requests embedded in HTTP POST use the following URL:
 
 http://{your-ip}:{your-port}/jsonrpc
 
