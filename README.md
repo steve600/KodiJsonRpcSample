@@ -55,7 +55,7 @@ public class JsonRpcRequest
 }
 ```
 
-Such a request can now be easily created as shown here:
+A request can now be easily created as shown here:
 
 ```c#
 // Create request
