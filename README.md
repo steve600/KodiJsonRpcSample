@@ -23,4 +23,4 @@ http://{your-ip}:{your-port}/jsonrpc
 
 Starting with Frodo nightly builds it is mandatory to set the HTTP header field Content-Type: application/json
 
-More information: <a href="http://kodi.wiki/view/JSON-RPC_API#HTTP" target="_blank">http://kodi.wiki/view/JSON-RPC_API#HTTP</a>
+More information: <a href="http://kodi.wiki/view/JSON-RPC_API#HTTP" target="_blank">http://kodi.wiki/view/JSON-RPC_API</a>
