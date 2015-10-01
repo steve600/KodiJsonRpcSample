@@ -69,7 +69,7 @@ var kodiRequest = new JsonRpcRequest()
         sort = new { order = "ascending", ignorearticle = true, method = "title" }
     }
 };
-''' 
+```
 
 The example does not cover the following points:
 
