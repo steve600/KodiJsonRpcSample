@@ -10,6 +10,13 @@ And the result should look like this:
 
 For the JSON serialization the <a href="http://www.newtonsoft.com/json" target="_blank">Json.NET</a> framework is used. 
 
+```c#
+public interface IModule
+{
+    void Initialize();
+}
+```
+
 The example does not cover the following points:
 
 * Async communication
