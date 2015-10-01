@@ -55,6 +55,22 @@ public class JsonRpcRequest
 }
 ```
 
+Such a request can now be easily created as shown here:
+
+```c#
+// Create request
+var kodiRequest = new JsonRpcRequest()
+{
+    Method = "VideoLibrary.GetMovies",
+    Params = new
+    {
+        properties = new string[] { "title", "genre", "year", "rating", "director", "plot", "plotoutline" },
+        limits = new { start = 1, end = 100 },
+        sort = new { order = "ascending", ignorearticle = true, method = "title" }
+    }
+};
+''' 
+
 The example does not cover the following points:
 
 * Async communication
